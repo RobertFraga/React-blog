@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { supabase } from "../supabase-client";
-import { useNavigate } from "react-router-dom"; // <-- React Router navigate
+import { useNavigate } from "react-router-dom";
 
 const Createpost = () => {
   const [title, setTitle] = useState("");
@@ -8,7 +8,7 @@ const Createpost = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [userId, setUserId] = useState<string | null>(null);
-  const navigate = useNavigate(); // <-- React Router hook
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getUser = async () => {

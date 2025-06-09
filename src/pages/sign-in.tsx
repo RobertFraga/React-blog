@@ -20,7 +20,6 @@ const Signin = () => {
     } else {
       setMessage("Signed in successfully!");
       navigate("/dashboard");
-      // Optionally, redirect user here
     }
   };
 
